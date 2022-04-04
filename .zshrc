@@ -113,7 +113,7 @@ alias berdb="bundle exec rake db:migrate"
 #Git aliases
 alias gcb="git checkout -b"
 alias gcm="git commit -m"
-alias gs="git show --stat --oneline origin/master..HEAD"
+alias gs="git status"
 alias current_branch="git rev-parse --abbrev-ref HEAD | tr -d '[[:space:]]'"
 
 #Program aliases
