@@ -1,0 +1,9 @@
+// Settings in here override those in "Default/Preferences.sublime-settings",
+// and are overridden in turn by syntax-specific settings.
+{
+	"translate_tabs_to_spaces": false,
+	"trim_trailing_white_space_on_save": "all",
+	"ensure_newline_at_eof_on_save": true,
+	"save_on_focus_lost": true,
+	"shift_tab_unindent": true,
+}
