@@ -15,4 +15,5 @@
 	- Boop (apple store)
 	- Sublime
 		- Configure settings from dotfiles
+- [ ] Run `aws configure`
 

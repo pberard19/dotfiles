@@ -64,5 +64,20 @@ else
 	echo "terraform is already installed"
 fi
 
+echo "Checking awscli"
+if ! command -v aws &> /dev/null
+then
+	echo "Installing awscli"
+	brew install awscli
+
+	if ! command -v aws &> /dev/null
+	then
+		echo "awscli could not be installed - see https://aws.amazon.com/cli/"
+		exit
+	fi
+else
+	echo "awscli is already installed"
+fi
+
 
 echo "Setup Complete"
