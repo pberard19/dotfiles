@@ -49,6 +49,20 @@ else
 	echo "pokemonsay is already installed"
 fi
 
+echo "Checking terraform"
+if ! command -v terraform &> /dev/null
+then
+	echo "Installing terraform"
+	brew install terraform
+
+	if ! command -v terraform &> /dev/null
+	then
+		echo "terraform could not be installed - see https://formulae.brew.sh/formula/terraform"
+		exit
+	fi
+else
+	echo "terraform is already installed"
+fi
 
 
 echo "Setup Complete"
