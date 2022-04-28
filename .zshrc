@@ -123,7 +123,7 @@ alias subl.="subl ."
 gpo() {
   BRANCH=$(current_branch)
   git push origin $1 $BRANCH
-  echo -e "http://github.com/trunkclub/${PWD##*/}/compare/${BRANCH}?expand=1"
+  echo -e "http://github.com/${PWD##*/}/compare/${BRANCH}?expand=1"
 }
 
 kgcmu() {
@@ -142,7 +142,7 @@ gpro() {
 }
 
 chrome() {
-  open -a ‘Google Chrome’ “https://github.com/trunkclub/$(basename “$PWD”)”
+  open -a ‘Google Chrome’ “https://github.com/$(basename “$PWD”)”
 }
 
 # https://github.com/possatti/pokemonsay
