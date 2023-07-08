@@ -102,6 +102,7 @@ source $ZSH/oh-my-zsh.sh
 
 
 export PATH=~/user/local/bin:$PATH
+export PATH=/opt:$PATH
 
 ########################### ALIASES ###########################
 #Ruby aliases
